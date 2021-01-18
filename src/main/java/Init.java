@@ -15,19 +15,19 @@ public class Init<init> {
 
         switch (numOfOperation) {
             case 1:
-            ParserDef parserDef = new ParserDef();
 
-                try {
-                    parserDef.parserSqlRu();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-                System.out.println(parserDef);
-                break;
-            case 2:
-            ParserWithRequest parserWithRequest = new ParserWithRequest();
-            parserWithRequest.parserWithReq();
-            System.out.println(parserWithRequest.topic);
+
+//                try {
+//                    parserDef.parserSqlRu();
+//                } catch (IOException e) {
+//                    e.printStackTrace();
+//                }
+//                System.out.println(parserDef);
+//                break;
+//            case 2:
+//            ParserWithRequest parserWithRequest = new ParserWithRequest();
+//            parserWithRequest.parserWithReq();
+//            System.out.println(parserWithRequest.topic);
         }
     }
 }

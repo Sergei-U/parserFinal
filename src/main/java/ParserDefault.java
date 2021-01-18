@@ -1,3 +1,4 @@
+import lombok.Data;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -12,11 +13,17 @@ import java.util.List;
  * @author Sergei Usov
  * @version 1.0.0
  */
+@Data
 public class ParserDefault {
     
     public List<Topic> topic;
     public List<Topic> messageList;
+    private String url;
 
+
+    public void setUrl(String url) {
+        this.url = urlReqSimple();
+    }
 
     public String urlReqSimple () {
         String urlReq = "https://www.sql.ru/forum/job-offers";
