@@ -14,7 +14,7 @@ import java.util.List;
  * @version 1.0.0
  */
 @Data
-public class ParserDefault {
+public class ParserDefault implements ParserInterfaceSqlRU{
     
     public List<Topic> topic;
     public List<Topic> messageList;
